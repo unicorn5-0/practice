@@ -1,7 +1,7 @@
 GET http://localhost:3001/api/notes/
 
 ###
-GET http://localhost:3001/api/notes/1
+GET http://localhost:3001/api/notes/65b23d1896e0d33e90487c7e
 
 ###
 GET http://localhost:3001/api/notes/5
@@ -11,9 +11,18 @@ POST http://localhost:3001/api/notes/
 Content-Type: application/json
 
 {
-    "content": "REST client is a good backend testing tool",
+    "content": "",
     "important": true
 }
 
 ###
-DELETE http://localhost:3001/api/notes/2
+PUT http://localhost:3001/api/notes/65b22ccc4c33f5cc69bf82aa
+Content-Type: application/json
+
+{
+    "content": "",
+    "important": false
+}
+
+###
+DELETE http://localhost:3001/api/notes/65b23d1896e0d33e90487c7e
